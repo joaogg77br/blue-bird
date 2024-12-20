@@ -1,0 +1,39 @@
+
+.MenuOpen{
+    animation: openMenu 300ms linear; 
+    width: 100%;
+}
+
+.MenuClose{
+    animation: closeMenu 300ms linear; 
+    width: 0px;
+    transition: 300ms;
+}
+
+.chevronTurnDown{
+    animation: turnPositionUp 300ms linear;
+    transform: rotate(-180deg);
+    transition: 300ms;
+}
+
+.chevronTurnUp{
+    animation: turnPositionDown 300ms linear;
+    transition: 300ms;
+}
+
+
+@keyframes openMenu {
+    from{
+        width: 0px;
+    }
+}
+
+@keyframes closeMenu{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0px;
+    }
+
+}
