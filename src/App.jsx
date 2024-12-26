@@ -10,6 +10,8 @@ import ArtCtrMrc from './components/ArtCtrMrc';
 import Footer from './components/Footer';
 import OndeAtuamos from './components/ondeAtuamos';
 import Diferences from './components/Diferences';
+import SimpleContactForm from './components/Formulário';
+import NossosClients from './components/NossosClientes';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -25,11 +27,12 @@ function App() {
       <QuemSomos/>
       <Valores/>
       <OqueFazemos/>
+      <NossosClients/>
       <Artivismo/>
       <ArtCtrMrc/>
       <Diferences/>
       <OndeAtuamos/>
-
+      <SimpleContactForm/>
       <Footer/>
     </div>
   );

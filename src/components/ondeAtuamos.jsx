@@ -1,16 +1,16 @@
 import ButtonDes from "./buttonDes"
 import SimpleContactForm from "./Formulário"
-import country from "../assets/Frame 59 (1).png"
+import country from "../assets/Frame_59_(1).png"
 
 export default function OndeAtuamos() {
     return (
         <>
-            <section className="px-10 lg:px-72 py-20">
+            <section className="px-20 lg:px-72 py-20 w-full">
                 <ButtonDes text="Onde atuamos" />
-                <div className="flex flex-col lg:flex-row">
-                    <div>
+                <div className="flex flex-col lg:flex-row w-full lg:gap-24">
+                    <div className="lg:w-2/3">
                         <br />
-                        <h1 className="text-5xl skita">
+                        <h1 className="text-6xl skita">
                             Celebrando a
                             brasilidade em
                             terras Americanas
@@ -24,11 +24,10 @@ export default function OndeAtuamos() {
                             ajude-nos a levar o melhor do Brasil para o mundo.
                         </p>
                     </div>
-                    <div className="">
+                    <div className="w-auto lg:w-1/5">
                         <img src={country} alt="" className="scale-100 lg:scale-[2] pt-10"/>
                     </div>
                     </div>
-                    <SimpleContactForm />
             </section>
         </>
     )

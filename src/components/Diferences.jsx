@@ -1,15 +1,15 @@
 import Block from "./Block"
-import Block1 from "../assets/blocks/Frame 43 (1).png"
-import Block2 from "../assets/blocks/Frame 37 (1).png"
-import Block3 from "../assets/blocks/Frame 38 (1).png"
-import Block4 from "../assets/blocks/Frame 39 (1).png"
+import Block1 from "../assets/blocks/Frame_43_(1).png"
+import Block2 from "../assets/blocks/Frame_37_(1).png"
+import Block3 from "../assets/blocks/Frame_38_(1).png"
+import Block4 from "../assets/blocks/Frame_39_(1).png"
 
 export default function Diferences() {
     return (
         <div className="w-full bg-cinzaBg mb-10 py-10 px-10 md:px-2">
             <div className="flex flex-col items-center gap-10 justify-center mt-10 lg:gap-10 
                     lg:flex-row">
-                <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-1
+                <div className="id gap-5 md:grid-cols-2 lg:grid-cols-1
                 ">
                     <Block img={Block1} title={"Expressão da alma da marca"} text={"A arte permite que as marcas expressem sua essência de forma visual e emocional, indo além de simples logotipos e slogans.  Através da arte, as marcas podem transmitir seus valores, sua história e sua personalidade de forma única;"} />
                     <Block img={Block2} title={"Criação de narrativas"} text={"As melhores marcas são aquelas que conseguem contar histórias que ressoam com seus públicos. A arte permite criar narrativas visuais e emocionais que conectam as marcas com seus consumidores em um nível mais profundo;"} />
