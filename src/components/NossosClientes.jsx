@@ -19,7 +19,7 @@ export default function NossosClients() {
             <div className="flex justify-center items-center gap-4 flex-col ">
                 <div className="flex  flex-col justify-center w-full items-center py-10 ">
                     <ButtonDes text={"Nossos Clientes"} />
-                    <h1 className="skita text-4xl p-10">Temos a confiança de grandes marcas</h1>
+                    <h1 className="skita text-5xl p-10 font-bold">Temos a confiança de grandes marcas</h1>
                 </div>
                 <div className="flex items-center flex-wrap justify-center gap-10">
                     <img src={Client1} alt="" />
@@ -29,7 +29,7 @@ export default function NossosClients() {
                 </div>
                 <div className=" flex flex-wrap items-center flex-col justify-center bg-cinzaBg my-10 pb-10">
                     <h1 className="skita text-4xl p-10">Nossos Parceiros</h1>
-                    <div className="flex flex-wrap items-center p-10 gap-10 justify-center">
+                    <div className="flex flex-wrap items-center p-10 gap-10 justify-center lg:grid lg:grid-cols-4 lg:grid-rows-2">
                         <img src={Parceiro1} alt="" />
                         <img src={Parceiro2} alt="" />
                         <img src={Parceiro3} alt="" />

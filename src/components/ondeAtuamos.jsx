@@ -10,7 +10,7 @@ export default function OndeAtuamos() {
                 <div className="flex flex-col lg:flex-row w-full lg:gap-24">
                     <div className="lg:w-2/3">
                         <br />
-                        <h1 className="text-6xl skita">
+                        <h1 className="text-5xl skita">
                             Celebrando a
                             brasilidade em
                             terras Americanas
@@ -24,8 +24,8 @@ export default function OndeAtuamos() {
                             ajude-nos a levar o melhor do Brasil para o mundo.
                         </p>
                     </div>
-                    <div className="w-auto lg:w-1/5">
-                        <img src={country} alt="" className="scale-100 lg:scale-[2] pt-10"/>
+                    <div className="w-auto lg:w-1/2">
+                        <img src={country} alt="" className="scale-100 lg:scale-[2] 2xl:scale-[1.3] pt-10"/>
                     </div>
                     </div>
             </section>

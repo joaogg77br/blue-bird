@@ -1,14 +1,14 @@
 import { Instagram, Linkedin } from "lucide-react"
-import Logo from "../assets/Logo.png"
+import Logo from "../assets/Logo_Bluebird.svg"
 
 
 export default function Footer() {
 
   return (
     <>
-      <div className="lg:px-72 flex gap-10 justify-center  bg-cinzaBg py-10 items-center">
+      <div className="lg:px-56 flex gap-10 justify-between  bg-cinzaBg py-10 items-center">
         <div className=" bg-black p-5">
-          <img src={Logo} alt="" className="w-54" />
+          <img src={Logo} alt="" className="w-80" />
         </div>
         <div className="">
           <div className="flex items-center justify-center w-full gap-3" >

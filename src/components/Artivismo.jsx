@@ -1,4 +1,6 @@
 import ButtonDes from "./buttonDes"
+import "../css/dona.css"
+
 
 export default function Artivismo() {
     return (
@@ -9,7 +11,8 @@ export default function Artivismo() {
                 {/* Trocar por uma img */}
                 <div className="">
                     <div className="flex">
-                        <div className="flex items-center justify-center ">
+                        <div className="flex items-center justify-center dona">
+
                         </div>
                         <div className="flex flex-col items-start justify-start"> 
                             <ButtonDes text="Artivismo" />

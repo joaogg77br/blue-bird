@@ -2,10 +2,9 @@
 export default function Conteudos({title,text,img}){
     return(
         <>
-            <div className="flex items-center text-center flex-col lg:w-80">
+            <div className="flex items-center text-center flex-col lg:w-80 gap-2">
                 <img src={img} alt="imagems" />
-                <h1 className="skita text-4xl">{title}</h1>
-                <br />
+                <h1 className="skita text-3xl font-[500]">{title}</h1>
                 <p>{text}</p>
             </div>
         </>

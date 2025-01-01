@@ -1,0 +1,218 @@
+/* Mapa 1 */
+div{
+    transition: 100ms;
+}
+.mapa *{
+    filter: grayscale(100%) sepia(100%) hue-rotate(-185deg);
+    transition: 2ms;
+    animation: animationOut linear 100ms  ;
+}
+
+.mapa:hover div {
+    transition: 100ms;
+    transform: rotate(20px);
+    animation: animation linear 100ms  ;
+    filter: grayscale(0) sepia(0) hue-rotate(0);
+}
+
+.mapa :nth-child(1){
+    background-color: red;
+    background-image: url("../assets/images/image2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa :nth-child(2){
+    background-color: red;
+    background-image: url("../assets/images/image6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa :nth-child(3){
+    background-color: red;
+    background-image: url("../assets/images/image7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa :nth-child(4){
+    background-color: red;
+    background-image: url("../assets/images/image11.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa :nth-child(5){
+    background-color: red;
+    background-image: url("../assets/images/image10.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa :nth-child(6){
+    background-color: red;
+    background-image: url("../assets/images/image1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa :nth-child(7){
+    background-color: red;
+    background-image: url("../assets/images/image8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa :nth-child(8){
+    background-color: red;
+    background-image: url("../assets/images/image11.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Mapa 2  */
+
+.mapa2 *{
+    filter: grayscale(100%) sepia(100%) hue-rotate(-185deg);
+    transition: 2ms;
+    animation: animationOut linear 100ms  ;
+}
+
+.mapa2:hover div {
+    transition: 100ms;
+    transform: rotate(20px);
+    animation: animation linear 100ms  ;
+    filter: grayscale(0) sepia(0) hue-rotate(0);
+}
+
+.mapa2 :nth-child(1){
+    background-color: red;
+    background-image: url("../assets/images3/Frame_97.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.mapa2 :nth-child(2){
+    background-color: blue;
+    background-image: url("../assets/images3/image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.mapa2 :nth-child(3){
+    background-color: blue;
+    background-image: url("../assets/images3/image2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.mapa2 :nth-child(4){
+    background-color: blue;
+    background-image: url("../assets/images3/image(1).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.mapa2 :nth-child(5){
+    background-color: blue;
+    background-image: url("../assets/images3/image_8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.mapa2 :nth-child(6){
+    background-color: blue;
+    background-image: url("../assets/images3/Frame_100.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Mapa 3 */
+.mapa3 *{
+    filter: grayscale(100%) sepia(100%) hue-rotate(-185deg);
+    transition: 2ms;
+    animation: animationOut linear 100ms  ;
+}
+
+.mapa3:hover div {
+    transition: 100ms;
+    transform: rotate(20px);
+    animation: animation linear 100ms  ;
+    filter: grayscale(0) sepia(0) hue-rotate(0);
+}
+
+.mapa3 :nth-child(1){
+    background-color: blue;
+    background-image: url("../assets/images2/Frame_91.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa3 :nth-child(2){
+    background-color: blue;
+    background-image: url("../assets/images2/image_6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa3 :nth-child(3){
+    background-color: blue;
+    background-image: url("../assets/images2/image10.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa3 :nth-child(4){
+    background-color: blue;
+    background-image: url("../assets/images2/image12.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa3 :nth-child(5){
+    background-color:red;
+    background-image: url("../assets/images2/image_8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa3 :nth-child(6){
+    background-color: blue;
+    background-image: url("../assets/images2/image11.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@keyframes animation {
+    from{
+    filter: grayscale(100%) sepia(100%) hue-rotate(-185deg);
+    }
+    to{
+    filter: grayscale(0) sepia(0) hue-rotate(0);
+    }
+}
+
+@keyframes animationOut {
+    from{
+    filter: grayscale(0) sepia(0) hue-rotate(0);
+    }
+    to{
+    filter: grayscale(100%) sepia(100%) hue-rotate(-185deg);
+    }
+}
+
+.bolsonaro :nth-child(1){
+    background: black;
+    width: 100%;
+    text-align: center;
+}

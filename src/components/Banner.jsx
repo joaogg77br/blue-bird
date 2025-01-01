@@ -7,10 +7,10 @@ export default function Banner() {
             px-10 py-10
             ">
                 <h1 className="skita text-startp-10">
-                    <p className="text-azulbebe text-4xl 
-                lg:text-6xl">Mais do que marketing,</p>
-                    <span className="font-bold text-black text-5xl 
-                lg:text-6xl
+                    <p className="text-azulbebe text-5xl  font-normal
+                lg:text-5xl">Mais do que marketing</p>
+                    <span className=" text-black text-5xl  font-medium
+                lg:text-7xl
                 ">um legado cultural</span>
                 </h1>
             </div>

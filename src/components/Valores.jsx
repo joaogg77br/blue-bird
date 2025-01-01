@@ -13,7 +13,7 @@ export default function Valores() {
         <>
             <section className="flex flex-col relative items-center w-full py-10 text-black bg-cinzaBg lg:px-20 justify-center">
                 <h1 className="skita text-center text-4xl font-bold  items-center pt-10 mb-10
-                lg:text-5xl lg:font-semibold
+                lg:text-5xl lg:font-semibold 
                 ">Nossos valores nos movem</h1>
                 <div className="flex flex-col w-full items-center justify-center px-5 gap-6
                 md:flex-row md:gap-60
@@ -32,7 +32,7 @@ export default function Valores() {
                     </div>
                         <img className="absolute top-20 w-80" src={Vetor1}></img>
                         <img className="absolute top-60 w-72" src={Vetor2}></img>
-                        <img className="absolute top-96 w-72" src={Vetor3}></img>
+                        <img className="absolute top-96 w-64" src={Vetor3}></img>
                     <div className="flex flex-col gap-10">
                         <Conteudos
                             img={lifeHandes}

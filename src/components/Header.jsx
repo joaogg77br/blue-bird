@@ -1,8 +1,9 @@
 import { useState } from "react"
 import { ChevronDown, Globe, Menu } from "lucide-react"
+import GlobeComponent from "./GlobeComponent"
 import { useTranslation } from "react-i18next"
 import "../css/Animations.css"
-import Logo from "../assets/Logo.png"
+import Logo from "../assets/Logo_Bluebird.svg"
 import Logo2 from "../assets/Symbol.png"
 
 //Nescesário trocar as fonts desse component
@@ -37,10 +38,10 @@ export default function Header() {
         </div>
         <div className="w-full ">
           <div className="hidden text-black p-4
-            lg:flex lg:justify-around
+            lg:flex lg:justify-between px-8
           ">
             {/* Lista de Links dentro da page */}
-            <ul className="flex gap-4 font-bold uppercase
+            <ul className="flex gap-6 font-medium  uppercase
               items-center
               lg:text-sm
             ">
@@ -54,9 +55,9 @@ export default function Header() {
             <div className="flex gap-5">
               {/* Tradutor */}
               <div className="flex gap-2 justify-center items-center">
-                <Globe />
+                <GlobeComponent/>
                 <div>{language}</div>
-              <ChevronDown className={`cursor pointer ${chevron ? `chevronTurnDown` : `chevronTurnUp`}`}
+              <ChevronDown className={`cursor-pointer ${chevron ? `chevronTurnDown` : `chevronTurnUp`}`}
                 onClick={(e) => {
                   setChevron(!chevron)
                   console.log(chevron)
@@ -75,7 +76,7 @@ export default function Header() {
                   }}>EN-US</li>
                 </ul>
               </div>
-              <button className="bg-black py-2 px-6 rounded font-bold text-white">Contato</button>
+              <button className="bg-black py-2 px-6 rounded font- text-white">Contato</button>
             </div>
           </div>
           <div className="flex  justify-end gap-4 text-black p-4

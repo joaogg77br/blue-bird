@@ -1,5 +1,6 @@
 import ButtonDes from "./buttonDes"
 
+
 //Mudar a font Instrumet sans e 
 
 export default function QuemSomos(){
@@ -7,12 +8,12 @@ export default function QuemSomos(){
         <>
             <section className=" px-5
             text-black  py-10
-            lg:px-40
+            lg:px-40 text-[19px]
             xl:px-72 lg:py-20 ">
                 <ButtonDes text="Quem somos"/>
                 <br />
                 <h1 className="skita text-4xl font-bold
-                lg:text-7xl ">A Bluebird Business</h1> 
+                lg:text-6xl "> Bluebird Business</h1> 
                 <br />
                 <p> <span className="p-2"></span>Somos uma empresa de Marketing Cultural que utiliza a arte como plataforma  para conectar grandes marcas a projetos que transformam a sociedade</p>
                 <br />
