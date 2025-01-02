@@ -1,4 +1,4 @@
-import Flower from "../assets/icone_flor.svg"
+import Flower from "../assets/flor.svg"
 
 
 export default function ButtonDes({ text }) {
