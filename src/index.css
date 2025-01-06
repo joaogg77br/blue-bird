@@ -2,16 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+}
+
 @font-face{
   font-family:regular ;
   src: url("./assets/fonts/InstrumentSans-Regular.ttf");
+}
+
+@font-face{
+  font-family: sitka;
+  src: url("./assets/fonts/Sitka Display Semibold.ttf")
 }
 
 body{
   font-family: regular;
 }
 .skita{
-  font-family: "Skita Banner";
+  font-family: sitka;
 }
 
 

@@ -1,5 +1,6 @@
 import { useState } from "react"
-import { ChevronDown, Globe, Menu } from "lucide-react"
+import { ChevronDown, Globe } from "lucide-react"
+import Menu from "../components/Menu"
 import GlobeComponent from "./GlobeComponent"
 import { useTranslation } from "react-i18next"
 import "../css/Animations.css"
@@ -11,13 +12,23 @@ export default function Header() {
   const [menu, setMenu] = useState(false)
   const [chevron, setChevron] = useState(false)
   const [language, setLanguage] = useState("PT")
-  let click = 0
 
   const { t, i18n } = useTranslation()
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)
-
   }
+  const body = document.body
+
+  body.addEventListener("click", (e) => {
+    const item = e.target
+    let verification = item.classList.contains("chevron")
+    if (verification) {
+      setChevron(true)
+    } else {
+      setChevron(false)
+    }
+  })
 
   return (
     <>
@@ -41,28 +52,31 @@ export default function Header() {
             lg:flex lg:justify-between px-8
           ">
             {/* Lista de Links dentro da page */}
-            <ul className="flex gap-6 font-medium  uppercase
+            <ul className="flex gap-6 font-semibold  uppercase
               items-center
-              lg:text-sm
+              lg:text-[16px]
             ">
-              <li><a href="">{t("nav1")}</a></li>
-              <li><a href="">{t("nav2")}</a></li>
-              <li><a href="">{t("nav3")}</a></li>
-              <li><a href="">{t("nav4")}</a></li>
-              <li><a href="">{t("nav5")}</a></li>
+              <li><a href="#quemsomos">{t("nav1")}</a></li>
+              <li><a href="#oqueFazemos">{t("nav2")}</a></li>
+              <li><a href="#nossosclients">{t("nav3")}</a></li>
+              <li><a href="#artivismo">{t("nav4")}</a></li>
+              <li><a href="#ondeatuamos">{t("nav5")}</a></li>
             </ul>
             {/* Tradutor */}
             <div className="flex gap-5">
               {/* Tradutor */}
-              <div className="flex gap-2 justify-center items-center">
-                <GlobeComponent/>
+              <div className="flex gap-2 justify-center items-center relative">
+                <GlobeComponent />
                 <div>{language}</div>
-              <ChevronDown className={`cursor-pointer ${chevron ? `chevronTurnDown` : `chevronTurnUp`}`}
-                onClick={(e) => {
-                  setChevron(!chevron)
-                  console.log(chevron)
-                }}
+                <ChevronDown className={`z-0 chevron cursor-pointer ${chevron ? `chevronTurnDown` : `chevronTurnUp`}`}
+                  onClick={(e) => {
+                    setChevron(!chevron)
+                    console.log(chevron)
+                  }}
                 />
+                <div className="bl opacity-[20%] w-full h-20 bolsonaro absolute h-18  chevron z-50"
+                  onClick={() => setChevron(!chevron)}
+                ></div>
               </div>
               <div className={`${chevron ? `block` : `hidden`} bg-black w-20 fixed top-20 `}>
                 <ul className="flex flex-col p-3 items-center justify-center text-white">
@@ -76,22 +90,20 @@ export default function Header() {
                   }}>EN-US</li>
                 </ul>
               </div>
-              <button className="bg-black py-2 px-6 rounded font- text-white">Contato</button>
+              <a href="#contato">
+                <button className="bg-black py-2 px-6 font-semibold rounded text-[16px] uppercase text-white">{t("contact")}</button>
+              </a>
             </div>
           </div>
           <div className="flex  justify-end gap-4 text-black p-4
           lg:hidden
           ">
             <div className="flex items-center justify-center gap-2">
-              {/* Tradutor */}
+              {/* Tradutor */}3
               <Globe />
               <div>{language}</div>
-              <ChevronDown className={`${chevron ? `chevronTurnDown` : `chevronTurnUp`}`}
-                onClick={(e) => {
-                  setChevron(!chevron)
-                  console.log(chevron)
-                }}
-              />
+              <div className="bl p-2 bg-black">
+              </div>
               <div className={`${chevron ? `block` : `hidden`} bg-black w-20 fixed top-20 `}>
                 <ul className="flex flex-col p-3 items-center justify-center text-white">
                   <li className={`cursor-pointer hover:text-azulbebe`} onClick={() => {
@@ -107,10 +119,12 @@ export default function Header() {
             </div>
             <div className={`fixed top-0 right-0 bg-green-400 h-screen z-0 w-full ${menu ? `MenuOpen` : `MenuClose`}`} >
             </div>
-            <Menu color="black" className="z-50 cursor-pointer" onClick={() => {
+            <div className="z-10" onClick={() => {
               setMenu(!menu)
-              console.log(menu)
-            }} />
+              console.log("bolsonaro")
+            }}>
+              <Menu />
+            </div>
           </div>
         </div>
       </header>

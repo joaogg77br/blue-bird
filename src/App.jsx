@@ -21,20 +21,27 @@ function App() {
   };
 
   return (
-    <div>
-      <Header />
-      <Banner/>
-      <QuemSomos/>
-      <Valores/>
-      <OqueFazemos/>
-      <NossosClients/>
-      <Artivismo/>
-      <ArtCtrMrc/>
-      <Diferences/>
-      <OndeAtuamos/>
-      <SimpleContactForm/>
-      <Footer/>
-    </div>
+<div className='scroll-smooth'>
+  <Header />
+  <Banner/>
+  <div id='quemsomos'></div>
+  <QuemSomos/>
+  <Valores/>
+  <div id='oqueFazemos'></div>
+  <OqueFazemos/>
+  <div id='nossosclients'></div>
+  <NossosClients/>
+  <div id='artivismo'></div>
+  <Artivismo/>
+  <ArtCtrMrc/>
+  <Diferences/>
+  <div id='ondeatuamos'></div>
+  <OndeAtuamos/>
+  <div id='contato'></div>
+  <SimpleContactForm/>
+  <Footer/>
+</div>
+
   );
 };
 

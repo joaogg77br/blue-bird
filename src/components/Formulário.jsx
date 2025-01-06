@@ -1,20 +1,19 @@
 
+import { t } from "i18next"
 import ButtonDes from "./buttonDes"
 
 export default function SimpleContactForm() {
     return (
-        <div className="min-h-screen flex items-center justify-center  lg:w-full">
+        <div className="min-h-screen flex items-center justify-center  lg:w-full pb-[100px]">
             <div className="bg-cinzaBg w-4/5 sm:w-2/3 backdrop-blur-sm rounded-lg shadow-lg 
             lg:w-2/3
             ">
                 <div className="p-6">
                     <div className="text-center mb-6">
                         <div className="flex justify-center p-5">
-                            <ButtonDes text="Contato" />
+                            <ButtonDes text={t("contact")} />
                         </div>
-                        <h1 className="skita text-3xl font-semibold">
-                            Fale como podemos apoiá-lo
-                        </h1>
+                        <h1 className="skita text-3xl font-semibold">{t("form_title")}</h1>
                     </div>
                     <form className="space-y-4">
                         <div>
