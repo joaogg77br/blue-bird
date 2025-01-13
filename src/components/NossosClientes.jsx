@@ -20,27 +20,30 @@ export default function NossosClients() {
     return (
         <>
             <div className="flex justify-center items-center gap-4 flex-col lg:pt-[100px] lg:pb-[50px] ">
+
                 <div className="flex  flex-col justify-center w-full items-center py-10 ">
                     <ButtonDes text={t("nav3")} />
-                    <h1 className="skita text-5xl p-10 font-bold lg:mt-10">{t("confianca")}</h1>
+                    <h1 className="skita text-4xl lg:text-5xl p-10 font-bold lg:mt-10">{t("confianca")}</h1>
                 </div>
+
                 <div className="flex items-center flex-wrap justify-center gap-10">
                     <img src={Client1} alt="" />
                     <img src={Client2} alt="" />
                     <img src={Client3} alt="" />
                     <img src={Client4} alt="" />
                 </div>
-                <div className=" flex flex-wrap items-center flex-col justify-center w-4/5 bg-cinzaBg my-10 pb-10 px-[30px]">
+
+                <div className=" flex flex-wrap items-center flex-col justify-center w-full lg:w-4/5 bg-cinzaBg my-10 pb-10 px-[30px]">
                     <h1 className="skita text-4xl p-10">{t("parceiros")}</h1>
                     <div className="flex flex-wrap items-center p-10 gap-10 justify-center lg:py-20 w-4/5">
-                        <img src={Parceiro1} alt="" />
-                        <img src={Parceiro2} alt="" />
-                        <img src={Parceiro3} alt="" />
-                        <img src={Parceiro4} alt="" />
+                        <img src={Parceiro1} alt="" className="h-10 lg:h-14" />
+                        <img src={Parceiro2} alt="" className="h-10 lg:h-14" />
+                        <img src={Parceiro3} alt="" className="h-10 lg:h-14" />
+                        <img src={Parceiro4} alt="" className="h-10 lg:h-14" />
                         <div></div>
-                        <img src={Parceiro5} alt="" />
-                        <img src={Parceiro7} alt="" />
-                        <img src={Parceiro6} alt="" />
+                        <img src={Parceiro5} alt="" className="h-10 lg:h-14" />
+                        <img src={Parceiro7} alt="" className="h-10 lg:h-14" />
+                        <img src={Parceiro6} alt="" className="h-10 lg:h-14" />
                     </div>
                 </div>
             </div>

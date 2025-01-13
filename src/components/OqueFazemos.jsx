@@ -1,97 +1,65 @@
 import "../css/grids.css"
 import { useTranslation } from "react-i18next"
 import ButtonDes from "./buttonDes"
-import Manivela from "./Manivela"
+import SlideGrid1 from "./SlideGrid1"
+import SlideGrid3 from "./SlideGrid3"
+import SlideGrid2 from "./SLideGrid2"
+
 
 export default function OqueFazemos() {
-    const {t} = useTranslation()
+    const { t } = useTranslation()
     return (
         <>
-            <section className="lg:px-72 lg:pt-[100px] lg:pb-32 flex flex-col gap-20 p-5">
+            <section className="lg:px-52 lg:pt-[100px] lg:pb-32 flex flex-col gap-10  p-5">
                 <div className="">
                     <div className="py-10">
                         <ButtonDes text={t("nav2")} />
                     </div>
-                    <h1 className="text-4xl py-4 skita">{t("oqfz-1")}</h1>
 
-                    <ul className="flex pb-6 gap-2 list-none">
-                        <li>&nbsp; {t("oqfz_description_1*1")}</li>
-                        <li>•&nbsp; {t("oqfz_description_1*2")}</li>
-                        <li>•&nbsp; {t("oqfz_description_1*3")}</li>
-                        <li>•&nbsp; {t("oqfz_description_1*4")}</li>
-                        <li>•&nbsp; {t("oqfz_description_1*5")}</li>
-                        <li>•&nbsp; {t("oqfz_description_1*6")}</li>
+                    <h1 className="text-6xl lg:text-4xl py-4 skita">{t("oqfz-1")}</h1>
+
+                    <ul className="text-[19px] lg:text-[16px] flex flex-col lg:flex-row  pb-6 gap-2 list-none">
+                        <div className="flex gap-2 lg:gap-1">
+                            <li>•&nbsp; {t("oqfz_description_1*1")}</li>
+                            <li>•&nbsp; {t("oqfz_description_1*2")}</li>
+                        </div>
+                        <div className="flex gap-2 lg:gap-1">
+                            <li>•&nbsp; {t("oqfz_description_1*3")}</li>
+                            <li>•&nbsp; {t("oqfz_description_1*4")}</li>
+                        </div>
+                        <div className="flex gap-2 lg:gap-1">
+                            <li>•&nbsp; {t("oqfz_description_1*5")}</li>
+                            <li>•&nbsp; {t("oqfz_description_1*6")}</li>
+                        </div>
                     </ul>
-
-                    <section className="mapa grid gap-4 lg:grid-row-2 lg:grid-cols-5 h-80 items-center">
-                        <div className="h-full w-full"></div>
-                        <div className="flex items-end h-full w-full row-span-2 text-white">
-                            <div className="bolsonaro w-full text-[10px]">
-                                <div className="">FILME POR UM FIO</div>
-                            </div>
-                        </div>
-                        <div className="h-full w-full flex items-end text-white">
-                            <div className="bolsonaro w-full text-[10px]">
-                                <div className="">DOCUMENTÁRIO OBEM</div>
-                            </div>
-                        </div>
-                        <div className="h-full w-full"></div>
-                        <div className="h-full w-full"></div>
-                        <div className="h-full w-full"></div>
-                        <div className="h-full w-full"></div>
-                        <div className="flex text-white items-end h-full w-full col-span-2">
-                            <div className="bolsonaro w-full text-[10px]">
-                                <div className="">ART FOR LOVE</div>
-                            </div>
-                        </div>
-                    </section>
-                    <Manivela />
                 </div>
-                        <div className="border-t border-zinc-400"></div>
+                <SlideGrid2/>
+                <div className="border-t border-zinc-400"></div>
                 <div className="">
-                    <h1 className="text-4xl py-4 skita">{t("oqfz-2")}</h1>
-                    <ul className="flex pb-6 gap-4 list-none">
-                        <li>&nbsp; {t("oqfz_description_2*1")}</li>
-                        <li>•&nbsp; {t("oqfz_description_2*2")}</li>
-                        <li>•&nbsp; {t("oqfz_description_2*3")}</li>
-                        <li>•&nbsp; {t("oqfz_description_2*4")}</li>
-                        <li>•&nbsp; {t("oqfz_description_2*5")}</li>
-                        <li>•&nbsp; {t("oqfz_description_2*6")}</li>
-                        <li>•&nbsp; {t("oqfz_description_2*7")}</li>
+                    <h1 className="text-6xl lg:text-4xl py-4 skita">{t("oqfz-2")}</h1>
+                    <ul className="text-[19px] lg:text-[16px] flex flex-col lg:flex-row pb-6 gap-4 list-none">
+                        <div className="flex gap-2">
+                            <li>•&nbsp; {t("oqfz_description_2*1")}</li>
+                            <li>•&nbsp; {t("oqfz_description_2*2")}</li>
+                            <li>•&nbsp; {t("oqfz_description_2*6")}</li>
+                        </div>
+                        <div className="flex gap-2">
+                            <li>•&nbsp; {t("oqfz_description_2*3")}</li>
+                            <li>•&nbsp; {t("oqfz_description_2*4")}</li>
+                            <li>•&nbsp; {t("oqfz_description_2*5")}</li>
+                        </div>
+                        <div className="flex gap-2">
+                            <li>•&nbsp; {t("oqfz_description_2*7")}</li>
+                        </div>
                     </ul>
-                    <section className="grid mapa3 gap-4 lg:grid-row-2  h-80 lg:grid-cols-5">
-                        <div className="h-full w-full"></div>
-                        <div className="h-full w-full row-span-2"></div>
-                        <div className="h-full w-full"></div>
-                        <div className="flex items-end text-white h-full w-full row-span-2 col-span-2">
-                            <div className="bolsonaro w-full text-[10px]">
-                                <div className="uppercase">27ª Mostra de Cinema de Tiradentes</div>
-                            </div>
-                        </div>
-                        <div className="h-full w-full"></div>
-                        <div className="h-full w-full"></div>
-                    </section>
-
-                    <Manivela />
+                        <SlideGrid3/>
                 </div>
-                        <div className="border-t border-zinc-400"></div>
-                <div className="">
-                    <h1 className="text-4xl py-4 skita">{t("oqfz-3")}</h1>
-                    <p className="pb-4">{t("oqfz_description_3")}<span className="font-bold">{t("oqfz-4")}</span> {t("oqfz_description_4")}</p>
-                    <section className="grid mapa2 gap-4 lg:grid-row-2  h-80 lg:grid-cols-5">
-                        <div className="h-full w-full"></div>
-                        <div className="h-full w-full row-span-2"></div>
-                        <div className="h-full w-full"></div>
-                        <div className="flex items-end text-white h-full w-full row-span-2 col-span-2">
-                            <div className="bolsonaro w-full text-[10px]">
-                                <div className="uppercase">19ª Mostra de Cinema de Ouro Preto</div>
-                            </div>
-                        </div>
-                        <div className="h-full w-full">a</div>
-                        <div className="h-full w-full"></div>
-                    </section>
-                    <Manivela />
+                <div className="border-t border-zinc-400"></div>
+                <div className="text-[19px]">
+                    <h1 className="text-6xl lg:text-4xl py-4 skita">{t("oqfz-3")}</h1>
+                    <p className="pb-4 text-[16px]">{t("oqfz_description_3")}<span className="font-bold">{t("oqfz-4")}</span> {t("oqfz_description_4")}</p>
                 </div>
+                    <SlideGrid1 />
             </section>
             <div className="flex flex-col w-full py-20 bg-cinzaBg text-center ">
                 <p className="font-bold pb-5 text-4xl skita">{t("remuneracao")}</p>

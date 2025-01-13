@@ -23,7 +23,7 @@ export default function Valores() {
                 </h1>
 
                 <div className="flex flex-col w-full items-center justify-center px-5 gap-6
-                md:flex-row md:gap-60 ">
+                md:flex-row sm:gap-10 md:gap-10 lg:gap-80 ">
                     <div className="flex flex-col gap-10">
                         <Conteudos
                             img={comunity}
@@ -36,9 +36,11 @@ export default function Valores() {
                             text={t("text_vl-2")}
                         />
                     </div>
-                        <img className="absolute top-36 w-80" src={Vetor1}></img>
-                        <img className="absolute top-72 w-72" src={Vetor2}></img>
-                        <img className="absolute top-[440px] w-64" src={Vetor3}></img>
+
+                        <img className="hidden lg:absolute lg:block lg:top-36 w-80" src={Vetor1}></img>
+                        <img className="hidden lg:absolute lg:block lg:top-72 w-72" src={Vetor2}></img>
+                        <img className="hidden lg:absolute lg:block lg:top-[440px] w-64" src={Vetor3}></img>
+
                     <div className="flex flex-col gap-10">
                         <Conteudos
                             img={lifeHandes}

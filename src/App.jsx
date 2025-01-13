@@ -12,6 +12,7 @@ import OndeAtuamos from './components/ondeAtuamos';
 import Diferences from './components/Diferences';
 import SimpleContactForm from './components/Formulário';
 import NossosClients from './components/NossosClientes';
+import SlideGrid1 from './components/SlideGrid1';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -21,26 +22,30 @@ function App() {
   };
 
   return (
-<div className='scroll-smooth'>
-  <Header />
-  <Banner/>
-  <div id='quemsomos'></div>
-  <QuemSomos/>
-  <Valores/>
-  <div id='oqueFazemos'></div>
-  <OqueFazemos/>
-  <div id='nossosclients'></div>
-  <NossosClients/>
-  <div id='artivismo'></div>
-  <Artivismo/>
-  <ArtCtrMrc/>
-  <Diferences/>
-  <div id='ondeatuamos'></div>
-  <OndeAtuamos/>
-  <div id='contato'></div>
-  <SimpleContactForm/>
-  <Footer/>
-</div>
+    <div className='scroll-smooth'>
+      <Header />
+      <Banner />
+      <div id='quemsomos'></div>
+      <QuemSomos />
+      <Valores />
+      <div id='oqueFazemos'></div>
+      <OqueFazemos />
+      <div id='nossosclients'></div>
+      <NossosClients />
+      <div id='artivismo'></div>
+      <Artivismo />
+      <ArtCtrMrc />
+      <Diferences />
+      <div id='ondeatuamos'></div>
+      <OndeAtuamos />
+      <div id='contato'></div>
+      <SimpleContactForm />
+      <Footer />
+      {/*
+      <SlideGrid1/>
+      */}
+
+    </div>
 
   );
 };

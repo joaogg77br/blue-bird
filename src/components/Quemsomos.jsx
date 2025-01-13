@@ -8,7 +8,7 @@ export default function QuemSomos(){
   const { t, i18n } = useTranslation()
     return(
         <>
-            <section className=" px-5
+            <section className=" px-5 pb-20
             text-black  pt-[80px]
             lg:px-40 text-[19px]
             xl:px-72 lg:pt-[100px] lg:pb-[150px]">

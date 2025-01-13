@@ -11,12 +11,16 @@ export default function Artivismo() {
             xl:px-72 lg:py-10">
                 {/* Trocar por uma img */}
                 <div className="">
-                    <div className="flex">
-                        <div className="flex items-center justify-center dona">
-
-                        </div>
-                        <div className="flex flex-col items-start justify-start">
+                        <div className="block mb-4 lg:hidden">
                             <ButtonDes text={t("nav4")} />
+                        </div>
+                    <div className="flex flex-col lg:flex-row">
+                        <div className="flex items-center justify-center dona
+                            h-80 w-60 mb-10 lg:w-[900px] 2xl:w-[400px]"></div>
+                        <div className="flex flex-col items-start justify-start">
+                        <div className="hidden mb-4 lg:block">
+                            <ButtonDes text={t("nav4")} />
+                        </div>
                             <br />
                             <h1 className=" text-5xl lg:text-7xl skita">{t("artvm-1")}</h1>
                         </div>

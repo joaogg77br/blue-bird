@@ -24,10 +24,11 @@ export default function Header() {
     const item = e.target
     let verification = item.classList.contains("chevron")
     if (verification) {
-      setChevron(true)
+      console.log("safe")
     } else {
       setChevron(false)
     }
+
   })
 
   return (
@@ -54,7 +55,8 @@ export default function Header() {
             {/* Lista de Links dentro da page */}
             <ul className="flex gap-6 font-semibold  uppercase
               items-center
-              lg:text-[16px]
+              lg:text-[12px] 
+              xl:text-[16px]
             ">
               <li><a href="#quemsomos">{t("nav1")}</a></li>
               <li><a href="#oqueFazemos">{t("nav2")}</a></li>
@@ -67,7 +69,7 @@ export default function Header() {
               {/* Tradutor */}
               <div className="flex gap-2 justify-center items-center relative">
                 <GlobeComponent />
-                <div>{language}</div>
+                <div className="font-bold">{language}</div>
                 <ChevronDown className={`z-0 chevron cursor-pointer ${chevron ? `chevronTurnDown` : `chevronTurnUp`}`}
                   onClick={(e) => {
                     setChevron(!chevron)
@@ -75,7 +77,9 @@ export default function Header() {
                   }}
                 />
                 <div className="bl opacity-[20%] w-full h-20 bolsonaro absolute h-18  chevron z-50"
-                  onClick={() => setChevron(!chevron)}
+                  onClick={() => {
+                    setChevron(!chevron)
+                  }}
                 ></div>
               </div>
               <div className={`${chevron ? `block` : `hidden`} bg-black w-20 fixed top-20 `}>
@@ -98,12 +102,19 @@ export default function Header() {
           <div className="flex  justify-end gap-4 text-black p-4
           lg:hidden
           ">
-            <div className="flex items-center justify-center gap-2">
-              {/* Tradutor */}3
+            <div className="flex items-center justify-center gap-2 z-50">
+              {/* Tradutor */}
               <Globe />
-              <div>{language}</div>
-              <div className="bl p-2 bg-black">
-              </div>
+              <div className="font-bold">{language}</div>
+              <ChevronDown className={`z-0 chevron cursor-pointer ${chevron ? `chevronTurnDown` : `chevronTurnUp`}`}
+                onClick={(e) => {
+                  setChevron(!chevron)
+                  console.log(chevron)
+                }}
+              />
+              <div className="bl opacity-[100%] right-18 w-28 h-50 lg:w-full h-20 bolsonaro absolute h-18  chevron z-50"
+                onClick={() => setChevron(!chevron)}
+              ></div>
               <div className={`${chevron ? `block` : `hidden`} bg-black w-20 fixed top-20 `}>
                 <ul className="flex flex-col p-3 items-center justify-center text-white">
                   <li className={`cursor-pointer hover:text-azulbebe`} onClick={() => {
@@ -117,7 +128,27 @@ export default function Header() {
                 </ul>
               </div>
             </div>
-            <div className={`fixed top-0 right-0 bg-green-400 h-screen z-0 w-full ${menu ? `MenuOpen` : `MenuClose`}`} >
+            <div className={`fixed top-0  right-0 bg-azulbebe h-screen z-0 w-full ${menu ? `MenuOpen` : `MenuClose`}`} >
+              <div className="flex flex-col gap-10 absolute top-32 left-10 text-[16px] font-semibold">
+                <div onClick={()=>{setMenu(!menu)}}>
+                  <a href="#quemsomos">{t("nav1")}</a>
+                </div>
+                <div onClick={()=>{setMenu(!menu)}}>
+                  <a href="#oqueFazemos">{t("nav2")}</a>
+                </div>
+                <div onClick={()=>{setMenu(!menu)}}>
+                  <a href="#nossosClients">{t("nav3")}</a>
+                </div>
+                <div onClick={()=>{setMenu(!menu)}}>
+                  <a href="#artivismo">{t("nav4")}</a>
+                </div>
+                <div onClick={()=>{setMenu(!menu)}}>
+                  <a href="#ondeatuamos">{t("nav5")}</a>
+                </div>
+              </div>
+              <a href="#contato" className="absolute bottom-10 left-10" onClick={()=> setMenu(!menu)}>
+                <button className="bg-black py-2 px-6 font-semibold rounded text-[16px] uppercase text-white">{t("contact")}</button>
+              </a>
             </div>
             <div className="z-10" onClick={() => {
               setMenu(!menu)
