@@ -193,6 +193,77 @@ div{
     background-size: cover;
 }
 
+.mapa4{
+}
+.mapa4 *{
+    filter: grayscale(100%) sepia(100%) hue-rotate(-205deg);
+    transition: 2ms;
+    animation: animationOut linear 100ms  ;
+}
+.mapa4:hover div {
+    transition: 100ms;
+    transform: rotate(20px);
+    animation: animation linear 100ms  ;
+    filter: grayscale(0) sepia(0) hue-rotate(0);
+}
+
+.mapa4 :nth-child(1){
+    background-color: red;
+    background-image: url("../assets/slides/slide-1/Frame_83.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa4 :nth-child(2){
+    background-color: red;
+    background-image: url("../assets/slides/slide-1/image_6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa4 :nth-child(3){
+    background-color: red;
+    background-image: url("../assets/slides/slide-1/image_9.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa4 :nth-child(4){
+    background-color: red;
+    background-image: url("../assets/slides/slide-1/image_7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa4 :nth-child(5){
+    background-color: red;
+    background-image: url("../assets/slides/slide-1/image_8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mapa4 :nth-child(6){
+    background-color: red;
+    background-image: url("../assets/slides/slide-1/image_10.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa4 :nth-child(7){
+    background-color: red;
+    background-image: url("../assets/images/image8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa4 :nth-child(8){
+    background-color: red;
+    background-image: url("../assets/images/image11.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @keyframes animation {
     from{

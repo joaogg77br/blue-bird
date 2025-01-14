@@ -52,7 +52,7 @@ export default function OqueFazemos() {
                             <li>•&nbsp; {t("oqfz_description_2*7")}</li>
                         </div>
                     </ul>
-                        <SlideGrid3/>
+                       <SlideGrid3/>
                 </div>
                 <div className="border-t border-zinc-400"></div>
                 <div className="text-[19px]">
