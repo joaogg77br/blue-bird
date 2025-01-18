@@ -1,11 +1,46 @@
-
-import { t } from "i18next"
+import { useTranslation } from "react-i18next"
+import emailjs from "@emailjs/browser"
+import { useState, useEffect } from "react"
 import ButtonDes from "./buttonDes"
-
 export default function SimpleContactForm() {
+    const [nome, setNome] = useState("")
+    const [email, setEmail] = useState("")
+    const [nEmpresa, setNEmpresa] = useState("")
+    const [mensagem, setMensagem] = useState("")
+    const [verify, setVerify] = useState(true)
+    const serviceId = "service_p0gm6hl"
+    const templateId = "template_nfauqse"
+    const templateParams = {
+        from_name: nome,
+        email: email,
+        empresa: nEmpresa,
+        message: mensagem
+    }
+    const {t} = useTranslation()
+    const publicKey = "z9CQ9sx93i6EfrFrA"
+    function SendEmail() {
+        emailjs.send(serviceId, templateId, templateParams, publicKey)
+            .then(response => {
+                alert("Email enviado")
+                console.log("email send")
+            })
+            .catch (err => console.log(err))
+    }
+
+    useEffect(() => {
+        if (nome.trim().length > 0 && email.trim().length > 0 && nEmpresa.trim().length && mensagem.trim().length > 0) {
+            console.log("email valido")
+            setVerify(false)
+        } else {
+            setVerify(true)
+            console.log("email não valido")
+        }
+    }, [nome, email, nEmpresa, mensagem])
+
+
     return (
-        <div className="min-h-screen flex items-center p-2 justify-center  lg:w-full pb-[100px]">
-            <div className="bg-cinzaBg w-full sm:w-2/3 backdrop-blur-sm rounded-lg shadow-lg 
+        <div className="min-h-screen flex items-center justify-center  lg:w-full pb-[100px]">
+            <div className="bg-cinzaBg w-full sm:w-2/3  p-4 backdrop-blur-sm shadow-lg 
             lg:w-2/3
             ">
                 <div className="md:p-6">
@@ -15,41 +50,61 @@ export default function SimpleContactForm() {
                         </div>
                         <h1 className="skita text-3xl font-semibold">{t("form_title")}</h1>
                     </div>
-                    <form className="space-y-4 ">
-                        <div>
+                    <div className="space-y-4 ">
+                        <div className="relative mb-10">
                             <input
                                 type="text"
-                                placeholder="Nome completo"
-                                className="w-full p-2 border-t-none border-b-2 bg-cinzaBg border-gray-300 outline-none"
+                                placeholder=""
+                                className="peer w-full p-2 border-t-none border-b-2 bg-cinzaBg border-gray-300 outline-none"
+                                required
+                                value={nome}
+                                e onChange={(e) => { setNome(e.target.value) }}
                             />
+                            <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t('form_place')}</label>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input
-                                type="text"
-                                placeholder="Nome da empresa"
-                                className="w-full p-2 border-t-none border-b-2 bg-cinzaBg border-gray-300 outline-none"
-                            />      <input
-                            type="text"
-                            placeholder="Endereço de email"
-                            className="w-full p-2 border-t-none border-b-2 bg-cinzaBg border-gray-300 outline-none"
-                        />
-                    
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-4">
+                            <div className="relative">
+                                <input
+                                    type="text"
+                                    placeholder=""
+                                    className="peer w-full p-2 border-t-none border-b-2 bg-cinzaBg border-gray-300 outline-none"
+                                    required
+                                    value={nEmpresa}
+                                    onChange={(e) => { setNEmpresa(e.target.value) }}
+                                />
+                                <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("form_placeholder2")}</label>
+                            </div>
+                            <div className="relative mb-10">
+                                <input
+                                    type="text"
+                                    placeholder=""
+                                    className="peer w-full p-2 border-t-none border-b-2 bg-cinzaBg border-gray-300 outline-none"
+                                    required
+                                    value={email}
+                                    onChange={(e) => { setEmail(e.target.value) }}
+                                />
+                                <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("form_placeholder3")}</label>
+                            </div>
                         </div>
-                        <div>
+                        <div className="relative">
                             <textarea
-                                placeholder="Mensagem"
-                                className="w-full p-2 border border-gray-300 bg-cinzaBg rounded min-h-[100px]"
+                                className="peer w-full  border border-gray-300 bg-cinzaBg  h-8 outline-none border-x-0 border-t-0 p-2"
+                                value={mensagem}
+                                onChange={(e) => { setMensagem(e.target.value) }}
+                                required
                             ></textarea>
+                            <label className="absolute top-[-2px] left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("form_placeholder4")}</label>
                         </div>
                         <div className="flex justify-end">
                             <button
+                                disabled={verify}
                                 type="submit"
-                                className="bg-black text-white px-4 py-2 mb-2 mx-2 rounded hover:bg-black/90"
-                            >
-                                Enviar
-                            </button>
+                                className="bg-black disabled:bg-zinc-400 duration-100 text-white px-4 py-2 mb-2 mx-2 rounded hover:bg-black/90"
+                                onClick={() => SendEmail()}
+                            >{t("form_placeholder5")}</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

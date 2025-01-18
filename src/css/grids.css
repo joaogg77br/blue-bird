@@ -2,6 +2,7 @@
 div{
     transition: 100ms;
 }
+
 .mapa{
 }
 .mapa *{
@@ -72,7 +73,6 @@ div{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 /* Mapa 2  */
 
 .mapa2 *{
@@ -152,7 +152,7 @@ div{
 
 .mapa3 :nth-child(1){
     background-color: blue;
-    background-image: url("../assets/images2/Frame_91.png");
+    background-image: url("../assets/slides/Projeto 1/image7-2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,6 +265,120 @@ div{
     background-size: cover;
 }
 
+
+.mapa5{
+}
+.mapa5 *{
+    filter: grayscale(100%) sepia(100%) hue-rotate(-205deg);
+    transition: 2ms;
+    animation: animationOut linear 100ms  ;
+}
+.mapa5:hover div {
+    transition: 100ms;
+    transform: rotate(20px);
+    animation: animation linear 100ms  ;
+    filter: grayscale(0) sepia(0) hue-rotate(0);
+}
+
+.mapa5 :nth-child(1){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 4/image-9.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa5 :nth-child(2){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 4/image-8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa5 :nth-child(3){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 4/image-10.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa5 :nth-child(4){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 4/image-13.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa5 :nth-child(5){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 4/image-11.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa5 :nth-child(6){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 4/image-12.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mapa6{
+}
+.mapa6 *{
+    filter: grayscale(100%) sepia(100%) hue-rotate(-205deg);
+    transition: 2ms;
+    animation: animationOut linear 100ms  ;
+}
+.mapa6:hover div {
+    transition: 100ms;
+    transform: rotate(20px);
+    animation: animation linear 100ms  ;
+    filter: grayscale(0) sepia(0) hue-rotate(0);
+}
+
+.mapa6 :nth-child(1){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 3/image7-5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa6 :nth-child(2){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 3/image-4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa6 :nth-child(3){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 3/image-5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa6 :nth-child(4){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 3/image-7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa6 :nth-child(5){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 3/image8-9.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapa6 :nth-child(6){
+    background-color: red;
+    background-image: url("../assets/slides/Projeto 3/image-6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 @keyframes animation {
     from{
     filter: grayscale(100%) sepia(100%) hue-rotate(-185deg);

@@ -16,9 +16,8 @@ export default function OqueFazemos() {
                         <ButtonDes text={t("nav2")} />
                     </div>
 
-                    <h1 className="text-6xl lg:text-4xl py-4 skita">{t("oqfz-1")}</h1>
-
-                    <ul className="text-[19px] lg:text-[16px] flex flex-col lg:flex-row  pb-6 gap-2 list-none">
+                    <h1 className="text-6xl font-semibold lg:text-4xl py-4 skita">{t("oqfz-1")}</h1>
+                    <ul className="text-[19px] lg:text-[12px] xl:text-[12px] flex flex-col lg:flex-row gap-2 list-none">
                         <div className="flex gap-2 lg:gap-1">
                             <li>•&nbsp; {t("oqfz_description_1*1")}</li>
                             <li>•&nbsp; {t("oqfz_description_1*2")}</li>
@@ -36,8 +35,8 @@ export default function OqueFazemos() {
                 <SlideGrid2/>
                 <div className="border-t border-zinc-400"></div>
                 <div className="">
-                    <h1 className="text-6xl lg:text-4xl py-4 skita">{t("oqfz-2")}</h1>
-                    <ul className="text-[19px] lg:text-[16px] flex flex-col lg:flex-row pb-6 gap-4 list-none">
+                    <h1 className="text-6xl lg:text-4xl font-semibold py-4  skita">{t("oqfz-2")}</h1>
+                    <ul className="text-[19px] lg:text-[12px] xl:text-[12px] flex flex-col lg:flex-row pb-10 gap-4 list-none">
                         <div className="flex gap-2">
                             <li>•&nbsp; {t("oqfz_description_2*1")}</li>
                             <li>•&nbsp; {t("oqfz_description_2*2")}</li>
@@ -56,7 +55,7 @@ export default function OqueFazemos() {
                 </div>
                 <div className="border-t border-zinc-400"></div>
                 <div className="text-[19px]">
-                    <h1 className="text-6xl lg:text-4xl py-4 skita">{t("oqfz-3")}</h1>
+                    <h1 className="text-6xl lg:text-4xl py-4 skita font-semibold">{t("oqfz-3")}</h1>
                     <p className="pb-4 text-[16px]">{t("oqfz_description_3")}<span className="font-bold">{t("oqfz-4")}</span> {t("oqfz_description_4")}</p>
                 </div>
                     <SlideGrid1 />

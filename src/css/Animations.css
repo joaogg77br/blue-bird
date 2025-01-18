@@ -1,7 +1,6 @@
-
 .MenuOpen{
     animation: openMenu 300ms linear; 
-    width: 100%;
+    width: 75%;
 }
 
 .MenuClose{
@@ -30,7 +29,7 @@
 
 @keyframes closeMenu{
     from{
-        width: 100%;
+        width: 75%;
     }
     to{
         width: 0px;

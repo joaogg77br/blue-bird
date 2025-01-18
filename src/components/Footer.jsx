@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <>
-      <div className="lg:px-56 flex flex-col lg:flex-row gap-10 justify-between  bg-cinzaBg py-5 lg:py-10 items-center">
+      <div className="lg:px-20 xl:px-56 flex flex-col lg:flex-row gap-10 justify-between  bg-cinzaBg py-5 lg:py-10 items-center">
 
         <div className="w-full items-start pl-4 md:items-center">
           <div className=" bg-black p-5 w-80">

@@ -34,7 +34,7 @@ export default function NossosClients() {
                 </div>
 
                 <div className=" flex flex-wrap items-center flex-col justify-center w-full lg:w-4/5 bg-cinzaBg my-10 pb-10 px-[30px]">
-                    <h1 className="skita text-4xl p-10">{t("parceiros")}</h1>
+                    <h1 className="skita text-4xl p-10 font-semibold">{t("parceiros")}</h1>
                     <div className="flex flex-wrap items-center p-10 gap-10 justify-center lg:py-20 w-4/5">
                         <img src={Parceiro1} alt="" className="h-10 lg:h-14" />
                         <img src={Parceiro2} alt="" className="h-10 lg:h-14" />

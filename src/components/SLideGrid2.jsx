@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../css/SlideShow.css';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { t } from 'i18next';
 
 function SlideGrid2() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -28,25 +29,25 @@ function SlideGrid2() {
     // const handlePrevSlide = () => {
     //     if (currentSlide == 0) return;
     //     console.log("retornado")
-    //     setCurrentSlide(currentSlide - 1)
+    //     setCurrentSlide(currentSlid'e - 1)
     // };
 
     return (
-        <div className=''>
-            <div className="slideshow-container">
-                <div className="slide-wrapper" ref={slideRef}>
+        <div className='w-full'>
+            <div className="slideshow-container w-full">
+                <div className="slide-wrapper flex justify-center" ref={slideRef}>
                     <div className="slides w-full" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                         <div className="slide">
-                            <section className="grid grid-cols-2 grid-rows-4 lg:grid-cols-5 gap-3 lg:h-[700px] mapa w-full">
+                            <section className="grid grid-cols-2 grid-rows-3 lg:grid-cols-5 gap-3 lg:h-[450px] mapa w-full">
                                 <div className="h-full w-full"></div>
                                 <div className="h-full w-full row-span-2 flex items-end text-white">
                                     <div className="bolsonaro w-full text-[10px]">
-                                        <div className="uppercase">FILME POR UM FIO</div>
+                                        <div className="uppercase">{t("slide6")}</div>
                                     </div>
                                 </div>
                                 <div className="h-full w-full flex items-end text-white">
                                     <div className="bolsonaro w-full text-[10px]">
-                                        <div className="uppercase">DOCUMENTáRIO QBEM</div>
+                                        <div className="uppercase">{t("slide7")}</div>
                                     </div>
                                 </div>
                                 <div className="h-full w-full"></div>
@@ -55,7 +56,7 @@ function SlideGrid2() {
                                 <div className="h-full w-full"></div>
                                 <div className="flex items-end text-white h-full w-full row-span-1 col-span-2">
                                     <div className="bolsonaro w-full text-[10px]">
-                                        <div className="uppercase">ART OF LOVE</div>
+                                        <div className="uppercase">{t("slide8")}</div>
                                     </div>
                                 </div>
                             </section>
@@ -63,12 +64,10 @@ function SlideGrid2() {
                     </div>
                 </div>
             </div>
-            <div>
-                <div className='w-full flex justify-end gap-3'>
+                <div className='w-full md:w-full flex justify-end gap-3'>
                     <button disabled={opacity} className={`opacity-50 p-2 border border-black`} ><ChevronLeft /></button>
                     <button className='p-2 border border-black opacity-50'><ChevronRight /></button>
                 </div>
-            </div>
         </div>
     );
 }

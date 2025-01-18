@@ -28,7 +28,6 @@ export default function Header() {
     } else {
       setChevron(false)
     }
-
   })
 
   return (
@@ -38,12 +37,12 @@ export default function Header() {
         lg:w-1/5">
           {/* logo 1 */}
           <div className="flex items-center justify-center w-full
-          lg:hidden">
+          xl:hidden">
             <img src={Logo2} alt="logo" className="" />
           </div>
           {/* logo 2 */}
           <div className="hidden  w-full h-20
-            lg:flex lg:items-center justify-center text-white
+          xl:flex lg:items-center justify-center text-white
           ">
             <img src={Logo} alt="logo" />
           </div>
@@ -55,14 +54,14 @@ export default function Header() {
             {/* Lista de Links dentro da page */}
             <ul className="flex gap-6 font-semibold  uppercase
               items-center
-              lg:text-[12px] 
+              lg:text-[12px] lg:gap-4
               xl:text-[16px]
             ">
-              <li><a href="#quemsomos">{t("nav1")}</a></li>
-              <li><a href="#oqueFazemos">{t("nav2")}</a></li>
-              <li><a href="#nossosclients">{t("nav3")}</a></li>
-              <li><a href="#artivismo">{t("nav4")}</a></li>
-              <li><a href="#ondeatuamos">{t("nav5")}</a></li>
+              <li className="hover:underline underline-offset-2 decoration-2"><a href="#quemsomos">{t("nav1")}</a></li>
+              <li className="hover:underline underline-offset-2 decoration-2"><a href="#oqueFazemos">{t("nav2")}</a></li>
+              <li className="hover:underline underline-offset-2 decoration-2"><a href="#nossosclients">{t("nav3")}</a></li>
+              <li className="hover:underline underline-offset-2 decoration-2"><a href="#artivismo">{t("nav4")}</a></li>
+              <li className="hover:underline underline-offset-2 decoration-2"><a href="#ondeatuamos">{t("nav5")}</a></li>
             </ul>
             {/* Tradutor */}
             <div className="flex gap-5">
@@ -128,7 +127,7 @@ export default function Header() {
                 </ul>
               </div>
             </div>
-            <div className={`fixed top-0  right-0 bg-azulbebe h-screen z-0 w-full ${menu ? `MenuOpen` : `MenuClose`}`} >
+            <div className={`fixed top-0  right-0 bg-azulbebe h-screen z-0 w-[20%] ${menu ? `MenuOpen` : `MenuClose`}`} >
               <div className="flex flex-col gap-10 absolute top-32 left-10 text-[16px] font-semibold">
                 <div onClick={()=>{setMenu(!menu)}}>
                   <a href="#quemsomos">{t("nav1")}</a>

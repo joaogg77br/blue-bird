@@ -11,7 +11,7 @@ export default function Artivismo() {
             xl:px-72 lg:py-10">
                 {/* Trocar por uma img */}
                 <div className="">
-                        <div className="block mb-4 lg:hidden">
+                        <div className="block mb-10 lg:hidden">
                             <ButtonDes text={t("nav4")} />
                         </div>
                     <div className="flex flex-col lg:flex-row">

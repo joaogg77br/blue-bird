@@ -5,9 +5,9 @@ export default function ButtonDes({ text }) {
 
     return (
         <>
-            <button className="flex bg-azulbebe px-4 py-1 font-medium items-center justify-center rounded-sm gap-1">
+            <button className="flex bg-azulbebe px-4 py-1  font-medium items-center justify-center rounded-sm gap-1">
                 <img src={Flower} alt="" />
-                <p className="font-bold uppercase">{text}</p>
+                <p className="font-bold text-[16px] uppercase">{text}</p>
             </button>
         </>
 )
