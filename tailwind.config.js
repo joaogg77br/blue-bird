@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors:{
-        azulbebe:"#67C3D2",
+        azulbebe:"#8ed6e3",
         cinzaBg:"#EBF4F6"
       }
     },

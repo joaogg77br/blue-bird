@@ -6,7 +6,7 @@ div{
 .mapa{
 }
 .mapa *{
-    filter: grayscale(100%) sepia(100%) hue-rotate(-205deg);
+    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }
@@ -76,7 +76,7 @@ div{
 /* Mapa 2  */
 
 .mapa2 *{
-    filter: grayscale(100%) sepia(100%) hue-rotate(-205deg);
+    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }
@@ -138,7 +138,7 @@ div{
 
 /* Mapa 3 */
 .mapa3 *{
-    filter: grayscale(100%) sepia(100%) hue-rotate(-205deg);
+    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }
@@ -196,7 +196,7 @@ div{
 .mapa4{
 }
 .mapa4 *{
-    filter: grayscale(100%) sepia(100%) hue-rotate(-205deg);
+    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }
@@ -269,7 +269,8 @@ div{
 .mapa5{
 }
 .mapa5 *{
-    filter: grayscale(100%) sepia(100%) hue-rotate(-205deg);
+
+    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }
@@ -326,7 +327,7 @@ div{
 .mapa6{
 }
 .mapa6 *{
-    filter: grayscale(100%) sepia(100%) hue-rotate(-205deg);
+    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }

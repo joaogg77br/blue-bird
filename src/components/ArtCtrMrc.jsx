@@ -9,7 +9,7 @@ export default function ArtCtrMrc() {
         <>
             <section className="pattern p-10
             lg:px-40 lg:pt-[100px]
-            xl:px-72 w-full bg-cinzaBg ">
+            xl:px-56 xl:pr-[250px] w-full bg-cinzaBg ">
                 {/* Trocar por uma img */}
                 <div className="">
                     <div className="flex">

@@ -9,7 +9,7 @@ export default function Banner() {
   }
 
   return (
-    <section className="uppercase flex justify-center items-center lg:h-96">
+    <section className="uppercase flex justify-center items-center lg:h-62">
       <div className="background-imagem w-full h-full flex justify-center items-center px-8 py-20 ">
 
         <h1 className="skita text-startp-10">

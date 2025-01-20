@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next"
 import emailjs from "@emailjs/browser"
 import { useState, useEffect } from "react"
 import { parsePhoneNumber } from "awesome-phonenumber"
+import { Loader2 } from "lucide-react"
 
 import ButtonDes from "./buttonDes"
 export default function SimpleContactForm() {
@@ -10,8 +11,9 @@ export default function SimpleContactForm() {
     const [nEmpresa, setNEmpresa] = useState("")
     const [mensagem, setMensagem] = useState("")
     const [number, setNumber] = useState(false)
-    const [string,setString] = useState("")
+    const [string, setString] = useState("")
     const [verify, setVerify] = useState(true)
+    const [loading, setLoading] = useState(false)
     const serviceId = "service_p0gm6hl"
     const templateId = "template_nfauqse"
     const templateParams = {
@@ -24,38 +26,39 @@ export default function SimpleContactForm() {
     const { t } = useTranslation()
     const publicKey = "z9CQ9sx93i6EfrFrA"
 
-    useEffect(() =>{
+    useEffect(() => {
         function Mask() {
-            let text = string 
-            text = (text || "").replace(/\D/g,"")
+            let text = string
+            text = (text || "").replace(/\D/g, "")
             text = text.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
             setString(text)
             console.log(number)
-            const pn = parsePhoneNumber(string,{regionCode:"BR"})
+            const pn = parsePhoneNumber(string, { regionCode: "BR" })
             setNumber(pn.valid)
             console.log(pn)
         }
         Mask()
-    },[string])
+    }, [string])
 
     function SendEmail() {
+        setLoading(true)
         emailjs.send(serviceId, templateId, templateParams, publicKey)
             .then(response => {
-                alert("Email enviado")
                 console.log("email send")
+                setLoading(false)
             })
             .catch(err => console.log(err))
     }
 
     useEffect(() => {
-        if (nome.trim().length > 0 && email.trim().length > 0 && nEmpresa.trim().length && mensagem.trim().length > 0  && number) {
+        if (nome.trim().length > 0 && email.trim().length > 0 && nEmpresa.trim().length && mensagem.trim().length > 0 && number) {
             console.log("email valido")
             setVerify(false)
         } else {
             setVerify(true)
             console.log("email não valido")
         }
-    }, [nome, email, nEmpresa, mensagem,number])
+    }, [nome, email, nEmpresa, mensagem, number])
 
 
     return (
@@ -116,19 +119,18 @@ export default function SimpleContactForm() {
                                 className="peer w-full p-2 border-t-none border-b-2 bg-cinzaBg border-gray-300 outline-none mb-10"
                                 required
                                 value={string}
-                                max={10}
+                                maxLength={12}
                                 onChange={(e) => { setString(e.target.value) }}
                             />
                             <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("form_placeholder6")}</label>
                         </div>
-
                         <div className="relative mt-10">
                             <textarea
                                 className="peer w-full  border border-gray-300 bg-cinzaBg border-b-2  h-10 outline-none border-x-0 border-t-0 p-2"
                                 value={mensagem}
-                                onChange={(e) => { 
-                                    setMensagem(e.target.value) 
-                                    }}
+                                onChange={(e) => {
+                                    setMensagem(e.target.value)
+                                }}
                                 required
                             ></textarea>
                             <label className="absolute top-[-2px] left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("form_placeholder4")}</label>
@@ -139,7 +141,14 @@ export default function SimpleContactForm() {
                                 type="submit"
                                 className="bg-black disabled:bg-zinc-400 duration-100 text-white px-4 py-2 mb-2 mx-2 rounded hover:bg-black/90"
                                 onClick={() => SendEmail()}
-                            >{t("form_placeholder5")}</button>
+                            >
+                                <div className={`${loading ? `hidden` : `block`}`}>
+                                    {t("form_placeholder5")}
+                                </div>
+                                <div className={` animate-spin ${loading ? `block` : `hidden`}`}>
+                                    <Loader2></Loader2>
+                                </div>
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ export default function Artivismo() {
         <>
             <section className=" p-10
             lg:px-40 lg:pb-[150px]
-            xl:px-72 lg:py-10">
+            xl:px-56 xl:pr-[270px] lg:py-10">
                 {/* Trocar por uma img */}
                 <div className="">
                         <div className="block mb-10 lg:hidden">

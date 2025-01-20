@@ -11,7 +11,7 @@ export default function QuemSomos(){
             <section className=" px-5 pb-20
             text-black  pt-[80px]
             lg:px-40 text-[19px]
-            xl:px-72 lg:pt-[100px] lg:pb-[150px]">
+            xl:px-56 xl:pr-[270px] lg:pt-[100px] lg:pb-[150px]">
                 <ButtonDes text={t("nav1")}/>
                 <br />
                 <h1 className="skita text-4xl font-bold
