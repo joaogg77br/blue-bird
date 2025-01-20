@@ -9,11 +9,11 @@ export default function ArtCtrMrc() {
         <>
             <section className="pattern p-10
             lg:px-40 lg:pt-[100px]
-            xl:px-56 xl:pr-[250px] w-full bg-cinzaBg ">
+            xl:px-56 xl:pr-[250px] w-full bg-cinzaBg  text-justify">
                 {/* Trocar por uma img */}
                 <div className="">
                     <div className="flex">
-                        <div className="flex flex-col items-start justify-start">
+                        <div className="flex text-start flex-col items-start justify-start">
                             <h1 className="text-[50px] leading-10 lg:text-7xl skita font-bold">{t("artCtr-1")}<span>{t("")}</span></h1>
                         </div>
                     </div>

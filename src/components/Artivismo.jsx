@@ -6,7 +6,7 @@ import { t } from "i18next"
 export default function Artivismo() {
     return (
         <>
-            <section className=" p-10
+            <section className=" p-10 text-justify
             lg:px-40 lg:pb-[150px]
             xl:px-56 xl:pr-[270px] lg:py-10">
                 {/* Trocar por uma img */}
@@ -22,7 +22,7 @@ export default function Artivismo() {
                             <ButtonDes text={t("nav4")} />
                         </div>
                             <br />
-                            <h1 className=" text-5xl lg:text-7xl skita">{t("artvm-1")}</h1>
+                            <h1 className="text-start text-5xl lg:text-7xl skita">{t("artvm-1")}</h1>
                         </div>
                     </div>
                     <br />
