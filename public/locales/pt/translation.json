@@ -73,8 +73,15 @@
   "form_placeholder2": "Nome da empresa",
   "form_placeholder3": "Endereço de email",
   "form_placeholder4": "Mensagem",
-  "form_placeholder5": "Enviar",
   "form_placeholder6": "Número de telefone",
+  
+  "img": "Enviar",
+  "img2": "Menssagem",
+  "img3": "Número de telefone",
+  "img4": "Endereço de email",
+  "img5": "Nome da empresa",
+  "img6": "Nome completo",
+
   "footer": "",
   "endereco": "Endereço",
   "access1": " Quer ter acesso a conteúdos exclusivos, dicas incríveis e fazer parte de",

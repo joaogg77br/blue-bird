@@ -83,7 +83,7 @@ export default function SimpleContactForm() {
                                 value={nome}
                                 e onChange={(e) => { setNome(e.target.value) }}
                             />
-                            <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t('form_place')}</label>
+                            <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t('img6')}</label>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-4">
@@ -96,7 +96,7 @@ export default function SimpleContactForm() {
                                     value={nEmpresa}
                                     onChange={(e) => { setNEmpresa(e.target.value) }}
                                 />
-                                <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("form_placeholder2")}</label>
+                                <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("img5")}</label>
                             </div>
 
                             <div className="relative mb-5">
@@ -108,7 +108,7 @@ export default function SimpleContactForm() {
                                     value={email}
                                     onChange={(e) => { setEmail(e.target.value) }}
                                 />
-                                <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("form_placeholder3")}</label>
+                                <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("img4")}</label>
                             </div>
                         </div>
 
@@ -122,7 +122,7 @@ export default function SimpleContactForm() {
                                 maxLength={12}
                                 onChange={(e) => { setString(e.target.value) }}
                             />
-                            <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("form_placeholder6")}</label>
+                            <label className="absolute top-2 left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("img3")}</label>
                         </div>
                         <div className="relative mt-10">
                             <textarea
@@ -133,7 +133,7 @@ export default function SimpleContactForm() {
                                 }}
                                 required
                             ></textarea>
-                            <label className="absolute top-[-2px] left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("form_placeholder4")}</label>
+                            <label className="absolute top-[-2px] left-2 text-gray-500 peer-valid:top-[-20px] peer-focus:top-[-20px] duration-150">{t("img2")}</label>
                         </div>
                         <div className="flex justify-end">
                             <button
@@ -143,7 +143,7 @@ export default function SimpleContactForm() {
                                 onClick={() => SendEmail()}
                             >
                                 <div className={`${loading ? `hidden` : `block`}`}>
-                                    {t("form_placeholder5")}
+                                    {t("img")}
                                 </div>
                                 <div className={` animate-spin ${loading ? `block` : `hidden`}`}>
                                     <Loader2></Loader2>
