@@ -6,7 +6,7 @@ div{
 .mapa{
 }
 .mapa *{
-    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
+    filter: grayscale(100%);
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }
@@ -76,7 +76,7 @@ div{
 /* Mapa 2  */
 
 .mapa2 *{
-    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
+    filter: grayscale(100%) ;
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }
@@ -138,7 +138,7 @@ div{
 
 /* Mapa 3 */
 .mapa3 *{
-    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
+    filter: grayscale(100%);
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }
@@ -196,7 +196,7 @@ div{
 .mapa4{
 }
 .mapa4 *{
-    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
+    filter: grayscale(100%);
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }
@@ -270,7 +270,7 @@ div{
 }
 .mapa5 *{
 
-    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
+    filter: grayscale(100%) ;
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }
@@ -278,7 +278,7 @@ div{
     transition: 100ms;
     transform: rotate(20px);
     animation: animation linear 100ms  ;
-    filter: grayscale(0) sepia(0) hue-rotate(0);
+    filter: grayscale(00%) sepia(0) hue-rotate(0);
 }
 
 .mapa5 :nth-child(1){
@@ -327,7 +327,7 @@ div{
 .mapa6{
 }
 .mapa6 *{
-    filter: grayscale(0%) sepia(90%)  hue-rotate(-200deg);
+    filter: grayscale(100%) ;
     transition: 2ms;
     animation: animationOut linear 100ms  ;
 }
@@ -382,7 +382,7 @@ div{
 }
 @keyframes animation {
     from{
-    filter: grayscale(100%) sepia(100%) hue-rotate(-185deg);
+    filter: grayscale(100%);
     }
     t{
     filter: grayscale(0) sepia(0) hue-rotate(0);
@@ -394,7 +394,7 @@ div{
     filter: grayscale(0) sepia(0) hue-rotate(0);
     }
     to{
-    filter: grayscale(100%) sepia(100%) hue-rotate(-1lk85deg);
+    filter: grayscale(100%) ;
     }
 }
 
